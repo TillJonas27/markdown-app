@@ -68,10 +68,10 @@ function App() {
   }
 
   return (
-    <div className="container h-50 text-center">
+    <div className="container h-50">
       <a href="https://webfabrik.substack.com/p/markdown-app?sd=pf" target="_blank"><i className="fa-solid fa-info"></i></a>
       <a target="_blank" href="https://github.com/TillJonas27/" ><i className="fa-brands fa-github"></i></a>
-      <h1 className="text-center mb-4 border-bottom">markdown application</h1>
+      <h1 className="mb-4 border-bottom">markdown application</h1>
       <div className="row h-100 justify-content-around">
         {displayEditor ? <Editor 
                           fullScreen={() => setDisplayPreviewer(old => !old)} 
