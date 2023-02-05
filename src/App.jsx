@@ -20,7 +20,7 @@ function Editor(props) {
 function Previewer(props) {
   React.useEffect( () => {
     document.getElementById("preview").innerHTML = marked.parse(props.textValue)
-  }, [])
+  }, [props.textValue]) 
 
   return (
     <div id="previewerComponent" className="bg-light-subtle shadow-sm card p-0 col-12 mt-2 mt-lg-0 col-lg-5">
@@ -66,10 +66,6 @@ function App() {
   function updatePreviewer(e) {
     setEditorContent(e.target.value)
   }
-
-  React.useEffect( () => {
-    document.getElementById("preview").innerHTML = marked.parse(editorContent)
-  }, [editorContent])
 
   return (
     <div className="container h-50 text-center">
