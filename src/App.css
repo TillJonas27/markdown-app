@@ -1,0 +1,29 @@
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0;
+  overflow-y: hidden;
+}
+
+html, body {
+  background-color: aliceblue;
+}
+
+.fa-github {
+  font-size: 2.5rem;
+  background-color: rgb(26, 31, 31);
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+i {
+  cursor: pointer;
+}
+textarea {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+  height: 100%;
+	width: 100%;
+}
